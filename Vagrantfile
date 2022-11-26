@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "edge2ai"
   config.vbguest.installer_options = { allow_kernel_upgrade: true }
   config.vm.network "public_network", ip: "192.168.1.10"
+  config.vm.provision "shell", path: "VMSetup.sh"
 
   config.vm.provider "virtualbox" do |vb|
      # Display the VirtualBox GUI when booting the machine
