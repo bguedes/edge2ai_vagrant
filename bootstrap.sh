@@ -21,5 +21,7 @@ if  [ -n "$(command -v yum)" ]; then
 fix
 
 cd ~
-git clone https://github.com/bguedes/edge2ai_vagrant.git
-cd cdp_pvc_onenode_demo
+git clone https://github.com/asdaraujo/edge2ai-workshop.git
+cd edge2ai-workshop.git
+
+cp edge2ai-workshop/setup/terraform/resources/stack.stack.cdp717p.sh edge2ai-workshop/setup/terraform/resources/stack.sh
