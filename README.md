@@ -3,7 +3,7 @@
 #### Linux 
   
 ```
-wget https://raw.githubusercontent.com/bguedes/cdp_pvc_onenode_demo/main/bootstrap.sh
+wget https://raw.githubusercontent.com/bguedes/edge2ai_vagrant/main/bootstrap.sh
 chmod +x bootstrap.sh
 ./bootstrap.sh
 
