@@ -15,7 +15,12 @@ if  [ -n "$(command -v yum)" ]; then
     echo "> Installing docker"
     sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     sudo yum -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-    sudo systemctl start docker
+    
+    sudo su
+    systemctl start docker
+    systemctl enable docker
+    systemctl restart docker
+    #sudo systemctl start docker
 fix
 
 cd ~
