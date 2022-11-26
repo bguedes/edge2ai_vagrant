@@ -1,11 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# Fail if the vagrant-disksize plugin is not installed
-unless Vagrant.has_plugin?("vagrant-vbguest")
-  raise 'vagrant-vbguest is not installed!'
-end
-
 Vagrant.configure("2") do |config|
   config.vm.box = "centos7"
   config.vm.define "edge2ai"
