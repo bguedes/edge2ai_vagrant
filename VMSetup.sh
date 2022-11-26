@@ -14,7 +14,7 @@ if  [ -n "$(command -v yum)" ]; then
     systemctl enable docker
     systemctl restart docker
     #sudo systemctl start docker
-fix
+fi
 
 cd ~
 git clone https://github.com/asdaraujo/edge2ai-workshop.git
