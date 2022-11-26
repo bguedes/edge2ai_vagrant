@@ -9,10 +9,9 @@ if  [ -n "$(command -v yum)" ]; then
     sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     sudo yum -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
     
-    sudo su
-    systemctl start docker
-    systemctl enable docker
-    systemctl restart docker
+    sudo systemctl start docker
+    sudo systemctl enable docker
+    sudo systemctl restart docker
 fi
 
 sudo chown vagrant /var/run/docker.sock
