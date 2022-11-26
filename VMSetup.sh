@@ -3,9 +3,6 @@
 echo "> Installing required tools"
 if  [ -n "$(command -v yum)" ]; then
     echo ">> Detected yum-based Linux"
-    sudo yum install -y util-linux
-    sudo yum install -y lvm2
-    sudo yum install -y e2fsprogs
     sudo yum install -y git
     sudo yum install -y yum-utils
     echo "> Installing docker"
