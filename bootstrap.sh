@@ -6,5 +6,20 @@ wget https://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-Vag
 
 vagrant box add CentOS-7-x86_64-Vagrant-2004_01.VirtualBox.box --name centos7
 
-#wget https://raw.githubusercontent.com/bguedes/cdp_pvc_onenode_demo/main/vagrant/VMSetup.sh
-#chmod +x VMSetup.sh
+echo "> Installing required tools"
+if  [ -n "$(command -v yum)" ]; then
+    echo ">> Detected yum-based Linux"
+    sudo yum install -y util-linux
+    sudo yum install -y lvm2
+    sudo yum install -y e2fsprogs
+    sudo yum install -y git
+    sudo yum install -y yum-utils
+    echo "> Installing docker"
+    sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+    sudo systemctl start docker
+fix
+
+cd ~
+git clone https://github.com/bguedes/edge2ai_vagrant.git
+cd cdp_pvc_onenode_demo
