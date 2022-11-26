@@ -16,7 +16,9 @@ fi
 
 sudo chown vagrant /var/run/docker.sock
 
+exit
+
 cd ~
 git clone https://github.com/asdaraujo/edge2ai-workshop.git
 
-cp edge2ai-workshop/setup/terraform/resources/stack.stack.cdp717p.sh edge2ai-workshop/setup/terraform/resources/stack.sh
+#cp edge2ai-workshop/setup/terraform/resources/stack.stack.cdp717p.sh edge2ai-workshop/setup/terraform/resources/stack.sh
