@@ -57,6 +57,24 @@ Edit Vagrantfile and change those attributes :
   vagrant up
 ```  
 
+Choose the right network interface -> 1 
+
+``` 
+Bringing machine 'edge2ai' up with 'virtualbox' provider...
+==> edge2ai: Importing base box 'centos7'...
+==> edge2ai: Matching MAC address for NAT networking...
+==> edge2ai: Setting the name of the VM: edge2ai_vagrant_edge2ai_1669846738198_60775
+==> edge2ai: Clearing any previously set network interfaces...
+==> edge2ai: Available bridged network interfaces:
+1) wlp0s20f3
+2) docker0
+==> edge2ai: When choosing an interface, it is usually the one that is
+==> edge2ai: being used to connect to the internet.
+==> edge2ai: 
+    edge2ai: Which interface should the network bridge to? 1
+```  
+
+
 ## Step 4 : Launch Edge2ai creation 
 
 ``` 
