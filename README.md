@@ -49,7 +49,7 @@ Edit Vagrantfile and change those attributes :
 **Owner** = the owner name <br>
 **End Date** = date when the cluster will be deleted, format is ddmmyyyy<br>
 **Tag** = tag used for the aws vm <br>
-
+<br>
 
 ## Step 3 : Create VM
 
