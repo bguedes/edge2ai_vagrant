@@ -32,7 +32,7 @@ Edit Vagrantfile and change those attributes :
     "end_date",                  #End Date ddmmyyyy
     "tag",                       #Tag for aws instance
     "eu-west-1",                 #AWS region
-    "bguedes",                   #AWS profile
+    "aws_profile",                   #AWS profile
     "aws_access_key_id",         #AWS key id
     "aws_secret_access_key",     #AWS access key
     "web_server_admin_email",    #Web server links admin email
