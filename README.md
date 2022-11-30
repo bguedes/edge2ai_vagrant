@@ -43,12 +43,12 @@ Edit Vagrantfile and change those attributes :
     privileged: false
 ```  
 
-Project namespace = namespace for your VM by default the value is 'Project namespace'
-Number of nodes = number of nodes to create by default 1
-Use a web server = Create a Web page with differents links to access different CDP Base services, by default y (yes)
-Owner = the owner name 
-End Date = date when the cluster will be deleted, format is ddmmyyyy
-Tag = tag used for the aws vm 
+Project namespace = namespace for your VM by default the value is 'Project namespace'<br>
+Number of nodes = number of nodes to create by default 1<br>
+Use a web server = Create a Web page with differents links to access different CDP Base services, by default y (yes)<br>
+Owner = the owner name <br>
+End Date = date when the cluster will be deleted, format is ddmmyyyy<br>
+Tag = tag used for the aws vm <br>
 
 ## Step 3 : Create VM
 
