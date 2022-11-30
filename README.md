@@ -50,6 +50,7 @@ Edit Vagrantfile and change those attributes :
 **End Date** = date when the cluster will be deleted, format is ddmmyyyy<br>
 **Tag** = tag used for the aws vm <br>
 
+
 ## Step 3 : Create VM
 
 ``` 
