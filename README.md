@@ -15,7 +15,7 @@ chmod +x bootstrap.sh
   
 ```
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/bguedes/edge2ai_vagrant/main/windows_bootstrap.sh -UseBasicParsing -OutFile bootstrap.sh
-./bootstrap.sh
+./windows_bootstrap.sh
 
 ``` 
 
