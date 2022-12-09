@@ -80,7 +80,7 @@ Bringing machine 'edge2ai' up with 'virtualbox' provider...
 ``` 
   vagrant ssh
   
-  cd cd edge2ai-workshop/setup/terraform/
+  cd edge2ai-workshop/setup/terraform/
   ./launch.sh <namespace>
 ```  
 
